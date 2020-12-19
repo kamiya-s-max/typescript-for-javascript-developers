@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    image: node:12.14.1 # バージョン指定も可能 ex. node:12.16.1
+    container_name: typescript-for-javascript-developers
+    tty: true
+    stdin_open: true
+    ports:
+      - 3001:3000
+    volumes:
+      - .:/typescript-for-javascript-developers
+    working_dir: "/typescript-for-javascript-developers"
