@@ -1,6 +1,7 @@
 export {};
 
-function bmi(height: numeber, weight: number): number {
+let bmi: (height: number, weight: number) => number
+= function(height: number, weight: number): number {
   return weight / (height * height)
 }
 
