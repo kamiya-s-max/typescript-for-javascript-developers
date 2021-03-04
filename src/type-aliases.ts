@@ -1,22 +1,23 @@
-export {};
+export {}
 
-type mojiretsu = string;
-const foo: mojiretsu = 'hello';
+type Mojiretsu = string;
 
+const foostring: string = 'Hello';
+const fooMojiretsu: Mojiretsu = 'Hello'
 
-const exapmle1 = {
+const example = {
   name: 'Ham',
   age: 43
-}
+};
 
 type Profile = {
   name: string;
   age: number;
-};
+}
 
 const example2: Profile = {
   name: 'Ham',
   age: 43
 };
 
-type profile2 = typeof exapmle1
+type Profile2 = typeof example;
